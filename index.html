@@ -123,12 +123,21 @@
             animation: slideInDown 1s ease;
         }
 
+        .hero-tagline {
+            font-size: 1.8em;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 15px;
+            animation: slideInUp 1s ease;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #753503;
             font-weight: 600;
             margin-bottom: 30px;
-            animation: slideInUp 1s ease;
+            animation: slideInUp 1.2s ease;
         }
 
         .hero-btn {
@@ -150,10 +159,14 @@
             box-shadow: 0 15px 40px rgba(0,0,0,0.3);
         }
 
-        /* CATALOG SECTION */
-        .catalog-section {
+        /* EDUKASI SECTION */
+        .edukasi-section {
             padding: 80px 50px;
-            max-width: 1400px;
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8c5 100%);
+        }
+
+        .edukasi-container {
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -161,8 +174,16 @@
             text-align: center;
             font-size: 3em;
             color: #753503;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
             position: relative;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: #d17a04;
+            margin-bottom: 60px;
+            font-weight: 600;
         }
 
         .section-title::after {
@@ -175,6 +196,146 @@
             height: 5px;
             background: linear-gradient(90deg, #e99203, #f8a200);
             border-radius: 10px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border-left: 8px solid #e99203;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(233, 146, 3, 0.2);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .warning-box h3 {
+            color: #753503;
+            font-size: 2em;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .sos-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(233, 146, 3, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .sos-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(233, 146, 3, 0.25);
+        }
+
+        .sos-card h4 {
+            color: #e99203;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .sos-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .why-madutella {
+            background: linear-gradient(135deg, #e99203 0%, #d17a04 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(233, 146, 3, 0.3);
+        }
+
+        .why-madutella h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .why-madutella p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        /* MARKETER SECTION */
+        .marketer-section {
+            padding: 80px 50px;
+            background: white;
+        }
+
+        .marketer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .marketer-content {
+            background: linear-gradient(135deg, #f8a200 0%, #e99203 100%);
+            padding: 60px;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 0 15px 50px rgba(233, 146, 3, 0.3);
+        }
+
+        .marketer-content h3 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .marketer-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-5px);
+        }
+
+        .benefit-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefit-card p {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        /* CATALOG SECTION */
+        .catalog-section {
+            padding: 80px 50px;
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8c5 100%);
+        }
+
+        .catalog-container {
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .products-grid {
@@ -199,7 +360,7 @@
 
         .product-image-container {
             width: 100%;
-            height: 300px;
+            height: 280px;
             background: linear-gradient(135deg, #f8a200, #e99203);
             display: flex;
             align-items: center;
@@ -246,14 +407,46 @@
             font-size: 1.05em;
         }
 
-        .product-price {
-            font-size: 2.2em;
-            background: linear-gradient(135deg, #e99203, #f8a200);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .size-options {
+            margin-bottom: 20px;
+        }
+
+        .size-option {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background: linear-gradient(135deg, #fff5e6, #ffe8c5);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .size-option:hover {
+            border-color: #e99203;
+            transform: translateX(5px);
+        }
+
+        .size-option.selected {
+            background: linear-gradient(135deg, #e99203, #d17a04);
+            color: white;
+            border-color: #753503;
+        }
+
+        .size-label {
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .size-price {
             font-weight: bold;
-            margin-bottom: 25px;
+            font-size: 1.1em;
+            color: #e99203;
+        }
+
+        .size-option.selected .size-price {
+            color: white;
         }
 
         .btn-order {
@@ -291,7 +484,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 50px;
             margin-bottom: 40px;
         }
@@ -491,16 +684,24 @@
                 font-size: 2.5em;
             }
 
-            .hero p {
-                font-size: 1.2em;
+            .hero-tagline {
+                font-size: 1.3em;
             }
 
-            .catalog-section {
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .edukasi-section, .marketer-section, .catalog-section {
                 padding: 50px 20px;
             }
 
             .section-title {
                 font-size: 2em;
+            }
+
+            .warning-box, .marketer-content {
+                padding: 30px 20px;
             }
 
             .products-grid {
@@ -524,8 +725,9 @@
         <div class="logo">🍯 Madutella</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
+            <li><a href="#edukasi">Edukasi</a></li>
+            <li><a href="#marketer">Marketer</a></li>
             <li><a href="#produk">Produk</a></li>
-            <li><a href="#tentang">Tentang</a></li>
             <li><a href="#kontak">Kontak</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -535,29 +737,117 @@
         </div>
     </nav>
 
+    
     <!-- HERO SECTION -->
     <section class="hero" id="home">
         <h1>Madutella</h1>
-        <p>Madu Murni Berkualitas Premium Langsung dari Tegal</p>
+        <p class="hero-tagline">Ingin Sehat dengan Cara Enak? Minum Madutella Setiap Hari!</p>
+        <p>Madutella - Madu Bersanad Sesuai Syari | Madu Murni Bukan Madu SOS</p>
         <a href="#produk" class="hero-btn">Lihat Katalog Produk</a>
+    </section>
+
+   
+     <!-- EDUKASI SECTION -->
+    <section class="edukasi-section" id="edukasi">
+        <div class="edukasi-container">
+            <h2 class="section-title">Edukasi Madu</h2>
+            <p class="section-subtitle">Cara Enak Untuk Sehat - Kenali Madu Asli vs Madu Palsu</p>
+
+            <div class="warning-box">
+                <h3>⚠️ WASPADAI MADU SOS!</h3>
+                <p style="font-size: 1.15em; margin-bottom: 25px; color: #666;">
+                    Banyak madu palsu beredar di pasaran yang merugikan kesehatan Anda. Madutella hadir untuk memberikan edukasi yang benar tentang madu murni dan bahaya madu SOS.
+                </p>
+
+                <div class="sos-grid">
+                    <div class="sos-card">
+                        <h4>S = Sintetis</h4>
+                        <p>Madu buatan pabrik dari bahan kimia, bukan dari lebah. Tidak memiliki manfaat kesehatan seperti madu asli dan berbahaya bagi tubuh.</p>
+                    </div>
+                    <div class="sos-card">
+                        <h4>O = Oplosan</h4>
+                        <p>Madu dicampur dengan gula, sirup, atau bahan lain untuk menambah volume dan keuntungan. Kualitas dan khasiat menjadi sangat rendah.</p>
+                    </div>
+                    <div class="sos-card">
+                        <h4>S = Syrupan</h4>
+                        <p>Peternak tidak bertanggung jawab yang memberi makan lebah dengan sirup gula bukannya nektar alami. Madu kehilangan manfaat alaminya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-madutella">
+                <h3>✅ Kenapa Memilih Madutella?</h3>
+                <p>Madutella adalah madu murni 100% yang dipanen langsung dari peternakan lebah terpercaya di Tegal. Kami hanya bekerja sama dengan peternak yang memberikan pakan alami kepada lebah, sehingga madu yang dihasilkan murni dari nektar bunga tanpa campuran apapun.</p>
+                <p style="margin-top: 15px; font-size: 1.3em; font-weight: bold;">🍯 Madutella - Madu Bersanad Sesuai Syari | 100% Murni Bukan SOS!</p>
+            </div>
+        </div>
+    </section>
+    <!-- MARKETER SECTION -->
+    <section class="marketer-section" id="marketer">
+        <div class="marketer-container">
+            <h2 class="section-title">Program Kemitraan Marketer</h2>
+            <p class="section-subtitle">Manfaatkan Kuota HP Anda untuk Menambah Penghasilan!</p>
+
+            <div class="marketer-content">
+                <h3>💼 Jadilah Marketer Madutella</h3>
+                <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;">
+                    Marketer tidak perlu stok barang, cukup iklan saja! Barang dikemas dan dikirim langsung dari Tegal dengan nama pengirim marketer.
+                </p>
+
+                <div class="marketer-benefits">
+                    <div class="benefit-card">
+                        <h4>📦 Tanpa Stok</h4>
+                        <p>Tidak perlu modal untuk stok barang, cukup promosikan produk kami</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>✈️ Kirim dari Tegal</h4>
+                        <p>Kami yang mengemas dan mengirim dengan nama marketer sebagai pengirim</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>💰 Harga Bebas</h4>
+                        <p>Tentukan harga jual kembali sesuai keinginan Anda</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>💳 Cash Payment</h4>
+                        <p>Setiap orderan dibayar cash sebelum dikirim</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>📱 Iklan Aja</h4>
+                        <p>Fokus ke promosi dan marketing, kami urus sisanya</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>🚀 Untung Maksimal</h4>
+                        <p>Margin keuntungan fleksibel sesuai strategi marketing Anda</p>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin-top: 40px; font-size: 1.1em;">
+                    <strong>Catatan:</strong> Harga di bawah adalah harga untuk marketer. Harga belum termasuk ongkir.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- CATALOG SECTION -->
     <section class="catalog-section" id="produk">
-        <h2 class="section-title">Katalog Produk Kami</h2>
-        <div class="products-grid" id="productsGrid"></div>
+        <div class="catalog-container">
+            <h2 class="section-title">Katalog Produk</h2>
+            <p class="section-subtitle">Berbagai Pilihan Madu Murni Berkualitas Premium</p>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer id="kontak">
         <div class="footer-content">
-            <div class="footer-section" id="tentang">
+            <div class="footer-section">
                 <h3>Tentang Madutella</h3>
-                <p>Produsen madu murni berkualitas premium dari Tegal. Kami menyediakan berbagai jenis madu alami tanpa campuran untuk kesehatan Anda.</p>
+                <p>Produsen madu murni berkualitas premium dari Tegal. Madutella - Madu Bersanad Sesuai Syari, 100% Murni Bukan Madu SOS.</p>
+                <p style="margin-top: 20px; font-weight: bold; color: #f8a200;">Cara Enak Untuk Sehat!</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/madu_tella?utm_source=qr&igsh=MWVsczBtazJsa3k2bw==" target="_blank">📷</a>
-                    <a href="https://www.facebook.com/share/1C2YjodVNP/" target="_blank">📘</a>
-                    <a href="https://s.shopee.co.id/1gC3l8BYUo" target="_blank">🛍️</a>
+                    <a href="https://www.instagram.com/madu_tella?utm_source=qr&igsh=MWVsczBtazJsa3k2bw==" target="_blank" title="Instagram">📷</a>
+                    <a href="https://www.facebook.com/share/1C2YjodVNP/" target="_blank" title="Facebook">📘</a>
+                    <a href="https://s.shopee.co.id/1gC3l8BYUo" target="_blank" title="Shopee">🛍️</a>
                 </div>
             </div>
 
@@ -580,17 +870,18 @@
             </div>
 
             <div class="footer-section">
-                <h3>Layanan Kami</h3>
+                <h3>Keunggulan Kami</h3>
                 <p>✓ Madu Murni 100% Asli</p>
+                <p>✓ Bersanad Sesuai Syari</p>
+                <p>✓ Bukan Madu SOS</p>
                 <p>✓ Pengiriman Seluruh Indonesia</p>
-                <p>✓ Program Kemitraan Marketer</p>
-                <p>✓ Konsultasi Gratis</p>
+                <p>✓ Program Marketer</p>
                 <p>✓ Garansi Kualitas</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 Madutella - Madu Murni Berkualitas Premium | Dibuat dengan ❤️</p>
+            <p>© 2026 Madutella - Madu Murni Berkualitas Premium | Cara Enak Untuk Sehat</p>
         </div>
     </footer>
 
@@ -598,81 +889,131 @@
     <div class="whatsapp-float" onclick="contactWhatsApp()">💬</div>
 
     <script>
-        // PRODUCTS DATA
+        // PRODUCTS DATA dengan Multiple Sizes
         const products = [
             {
-                name: "Madu Nektar Akasia 1kg",
+                name: "Madu Nektar Akasia",
                 desc: "Madu ringan dan lembut, cocok untuk pemula dengan rasa yang tidak terlalu kuat",
-                price: "Rp 165.000",
                 emoji: "🌼",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 165000 },
+                    { size: "450 gram", price: 95000 },
+                    { size: "310 gram", price: 70000 }
+                ]
             },
             {
-                name: "Madu Nektar Karet 1kg",
+                name: "Madu Nektar Karet",
                 desc: "Kaya antioksidan dengan rasa khas yang kuat, baik untuk kesehatan",
-                price: "Rp 175.000",
                 emoji: "🌳",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 175000 },
+                    { size: "450 gram", price: 100000 },
+                    { size: "310 gram", price: 80000 }
+                ]
             },
             {
-                name: "Madu Nektar Randu 1kg",
+                name: "Madu Nektar Randu",
                 desc: "Tekstur lembut dengan manfaat untuk pernafasan",
-                price: "Rp 200.000",
                 emoji: "🌸",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 200000 },
+                    { size: "450 gram", price: 110000 }
+                ]
             },
             {
-                name: "Madu Nektar Kaliandra 1kg",
+                name: "Madu Nektar Kaliandra",
                 desc: "Aroma floral yang khas dengan kandungan enzim tinggi",
-                price: "Rp 200.000",
                 emoji: "🌺",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 200000 },
+                    { size: "450 gram", price: 110000 }
+                ]
             },
             {
-                name: "Madu Nektar Rambutan 1kg",
+                name: "Madu Nektar Rambutan",
                 desc: "Rasa fruity dengan kandungan vitamin C tinggi",
-                price: "Rp 200.000",
                 emoji: "🍈",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 200000 },
+                    { size: "450 gram", price: 105000 }
+                ]
             },
             {
-                name: "Madu Alas Liar Tawon Gung 1kg",
+                name: "Madu Nektar Mangium",
+                desc: "Warna gelap dengan kandungan mineral yang tinggi",
+                emoji: "🌲",
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 195000 },
+                    { size: "450 gram", price: 105000 }
+                ]
+            },
+            {
+                name: "Madu Alas Liar Tawon Gung",
                 desc: "Dari hutan liar dengan khasiat maksimal untuk kesehatan",
-                price: "Rp 225.000",
                 emoji: "🏔️",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 225000 },
+                    { size: "450 gram", price: 120000 }
+                ]
             },
             {
-                name: "Madu Trigona/Klanceng 1kg",
+                name: "Madu Trigona/Klanceng",
                 desc: "Premium! Rasa asam segar dengan kandungan antibakteri tinggi",
-                price: "Rp 425.000",
                 emoji: "⭐",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 kg", price: 425000 },
+                    { size: "450 gram", price: 235000 },
+                    { size: "300 gram", price: 155000 }
+                ]
             },
             {
-                name: "Madu Bawang Lanang 300gr",
+                name: "Madu Bawang Lanang",
                 desc: "Kombinasi madu murni dengan bawang lanang untuk stamina pria",
-                price: "Rp 120.000",
                 emoji: "🧄",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "300 gram", price: 120000 }
+                ]
             },
             {
-                name: "Bee Pollen 100gr",
-                desc: "Serbuk sari lebah, superfood alami kaya nutrisi",
-                price: "Rp 55.000",
+                name: "Bee Pollen",
+                desc: "Serbuk sari lebah, superfood alami kaya nutrisi dan vitamin",
                 emoji: "🌼",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "100 gram", price: 55000 }
+                ]
             },
             {
-                name: "Raw Pure Propolis 10ml",
-                desc: "Ekstrak propolis murni, antibiotik alami yang sangat ampuh",
-                price: "Rp 150.000",
+                name: "Raw Pure Propolis",
+                desc: "Ekstrak propolis murni, antibiotik alami. Dijamin murni, lebih kental dan isi lebih banyak dari brand propolis terkenal",
                 emoji: "💧",
-                image: ""
+                image: "",
+                sizes: [
+                    { size: "1 botol (10ml)", price: 150000 },
+                    { size: "5 botol", price: 125000, note: "/botol" }
+                ]
             }
         ];
 
         const phoneNumber = "6289525131536";
+
+        // Format currency
+        function formatRupiah(number) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(number).replace('IDR', 'Rp');
+        }
 
         // RENDER PRODUCTS
         function renderProducts() {
@@ -681,6 +1022,13 @@
                 const card = document.createElement('div');
                 card.className = 'product-card';
                 card.style.animationDelay = `${index * 0.1}s`;
+                
+                const sizesHTML = product.sizes.map((size, idx) => `
+                    <div class="size-option" data-product="${index}" data-size="${idx}" onclick="selectSize(${index}, ${idx})">
+                        <span class="size-label">${size.size}</span>
+                        <span class="size-price">${formatRupiah(size.price)}${size.note || ''}</span>
+                    </div>
+                `).join('');
                 
                 card.innerHTML = `
                     <div class="product-image-container">
@@ -692,8 +1040,10 @@
                     <div class="product-info">
                         <div class="product-name">${product.name}</div>
                         <div class="product-desc">${product.desc}</div>
-                        <div class="product-price">${product.price}</div>
-                        <button class="btn-order" onclick="orderProduct('${product.name}', '${product.price}')">
+                        <div class="size-options" id="sizes-${index}">
+                            ${sizesHTML}
+                        </div>
+                        <button class="btn-order" onclick="orderProduct(${index})">
                             Pesan Sekarang
                         </button>
                     </div>
@@ -701,18 +1051,43 @@
                 
                 grid.appendChild(card);
             });
+
+            // Auto select first size for each product
+            products.forEach((_, index) => {
+                selectSize(index, 0);
+            });
+        }
+
+        // SELECT SIZE
+        function selectSize(productIndex, sizeIndex) {
+            const sizesContainer = document.getElementById(`sizes-${productIndex}`);
+            const options = sizesContainer.querySelectorAll('.size-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            options[sizeIndex].classList.add('selected');
         }
 
         // ORDER PRODUCT
-        function orderProduct(name, price) {
-            const message = `Permisi admin Madutella, saya mau beli ${name} dengan harga ${price}`;
+        function orderProduct(productIndex) {
+            const product = products[productIndex];
+            const sizesContainer = document.getElementById(`sizes-${productIndex}`);
+            const selectedOption = sizesContainer.querySelector('.size-option.selected');
+            
+            if (!selectedOption) {
+                alert('Silakan pilih ukuran terlebih dahulu!');
+                return;
+            }
+
+            const sizeIndex = selectedOption.dataset.size;
+            const size = product.sizes[sizeIndex];
+            
+            const message = `Permisi admin Madutella, saya mau beli ${product.name} ukuran ${size.size} dengan harga ${formatRupiah(size.price)}${size.note || ''}`;
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
         }
 
         // CONTACT WHATSAPP
         function contactWhatsApp() {
-            const message = "Halo admin Madutella, saya ingin bertanya tentang produk Anda";
+            const message = "Halo admin Madutella, saya ingin bertanya tentang produk dan program marketer";
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
         }
